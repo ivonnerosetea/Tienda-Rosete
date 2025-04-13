@@ -11,32 +11,25 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
 </head>
 <body>
-
-<!-- Promo -->
+  
+  <!-- Header envío gratis -->
   <div class="prom">
-    <h5>Envio <span>GRATIS</span> en tu primer pedido <span>+ 100 PUNTOS</span></h5>
+    <p>¡Envio <span>GRATIS</span> en tu primer pedido <span>+ 100 PUNTOS</span>!</p>
   </div>
   
-<!-- Rosete -->
- <section id="header">
-  <ul id="navbar">
-    <li><a href="#index.html">Menú</a></li>
+<!-- Header ROSETE -->
+ <section class="header">
+  <ul class="navbar">
+    <li><a href="#blog.html">Testimonios</a></li>
     <li><a href="#blog.html">Blog</a></li>
     <li><a href="#about.html">Nosotros</a></li>
-    <li><a href="#contact.html">Contacto</a></li>
   </ul>
 
   <div class="shein">
-   <h2>ROSETE<mx>MX</mx></h2>
+   <h2 style="margin-left: -35px;">ROSETE<mx>MX</mx></h2>
   </div>
-  <div>
-    <ul id="navbar">
-      <li><a href="#cart.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <circle cx="12" cy="7" r="4" />
-        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-      </svg></a></li> 
-      
+  <div class="iconos">
+    <ul class="navbar"> 
       <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
@@ -67,14 +60,13 @@
         <path d="M12.5 3a17 17 0 0 1 0 18" />
       </svg></a></li>
     </ul>
-
   </div>
  </section>
 
- <!-- Categorías -->
+ <!-- Header categorías -->
  <div class="catego">
-  <ul id="navbar">
-    <li><a href="#"><span>REBAJAS</span></a></li>
+  <ul class="navbar">
+    <li><a href="#"><span style="color: rgb(230, 0, 0);">REBAJAS</span></a></li>
     <li><a href="#">Tendencia</a></li>
     <li><a href="#">Categorías</a></li>
     <li><a href="#">Campañas</a></li>
@@ -84,10 +76,12 @@
     <li><a href="#">Comentarios</a></li>
   </ul>
 
-  <!-- Buscar -->
-<form>
-   <input type="search" id="search-box" placeholder="Buscar">
-</form>
+  <div class="search-box">
+    <input type="text" placeholder="Buscar..." />
+    <button type="submit">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>  
 </div>
 
  <!-- Imagen de menú ROSETE -->
@@ -95,7 +89,7 @@
  </section>
 
  <!-- Descuentos -->
- <section id="descuento" class="section-des1">
+ <section class="descuento">
   <div class="extra">
     <h3>-10% EXTRA</h3>
     <h6>en pedidos de +$MXN599</h6>
@@ -113,95 +107,326 @@
 </div>
 </section>
 
- <!-- Tendencia -->
- <section id="product1" class="section-p1">
-  <h2>TENDENCIA</h2>
-  <p>¡Nuevo diseño moderno!</p>
-  <div class="pro-container">
-    <div class="pro">
-      <img src="img/cuetor.jpeg" alt="">
-      <div class="des">
-        <h6 class="sh">ROSETE</h6>
-        <h4>Vestido ajustado de cuello cuadrado con abertura trasera</h4>
-        <h3>$MXN285.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
-      </div>    
-     </div>
+<!-- Prueba -->
+<section id="collabs">
+  <h2>#TENDENCIA</h2>
+  <div class="slider-layout">    
+    <!-- Columna izquierda -->
+    <div class="container-slider">
+      <div class="bodas-club">
+        <img src="bodas.jpeg" alt="">
+        <img src="disfraz.jpeg" alt="">
+        <img src="club.jpeg" alt="">
+      </div>
+    </div>
 
-     <div class="pro">
+    <!-- Columna centro -->
+    <div class="slider">
+      <ul>
+        <li><img src="trend.jpeg" alt=""></li>
+        <li><img src="baby.jpeg" alt=""></li>
+        <li><img src="hair.jpeg" alt=""></li>
+        <li><img src="jeans.jpeg" alt=""></li>
+      </ul>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="marcas-slider">
+      <img src="green.jpeg" alt="">
+      <img src="levis.jpeg" alt="">
+      <img src="nigth.jpeg" alt="">
+      <img src="lounge.jpeg" alt="">
+      <img src="niño.jpeg" alt="">
+      <img src="sheglam.jpeg" alt="">
+    </div>
+
+  </div>
+</section>
+
+<!-- = COLOR EN TENDENCIA = -->
+<div class="container">
+ <div class="tendencia">
+  <h2>COLOR EN TENDENCIA</h2>
+  <p>¡El color que queda con todo!</p>
+ </div>
+  <div class="products page active" id="page1">
+    <!-- Aquí se deben colocar los productos HTML con <img>, <h3>, <p> y botones como en la versión anterior -->
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
       <img src="img/ten1.jpeg" alt="">
-      <div class="des">
-        <h6 class="sh">ROSETE</h6>
-        <h4>Top corto de cuello alto de malla transparente</h4>
-        <h3>$MXN478.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+      <h6 class="sh">ROSETE</h6>
+      <p>Top corto de cuello alto de malla transparente</p>
+      <p>$MXN478.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
-
-    <div class="pro">
+    <div class="product">
       <img src="img/ten2.jpeg" alt="">
-      <div class="des">
-        <h6 class="sh">ROSETE</h6>
-        <h4>Vestido ajustado de cuello alto ribete lanudo brillante</h4>
-        <h3>$MXN780.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello alto ribete lanudo brillante</p>
+      <p>$MXN780.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
-
-    <div class="pro">
+    <div class="product">
       <img src="img/ten3.jpeg" alt="">
-      <div class="des">
         <h6 class="sh">ROSETE</h6>
-        <h4>Camisa corta pecho con fruncido con nudo de manga larga</h4>
-        <h3>$MXN548.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+        <p>Camisa corta pecho con nudo de manga larga</p>
+        <p>$MXN548.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
-
-    <div class="pro">
+    <div class="product">
       <img src="img/ten4.jpeg" alt="">
-      <div class="des">
         <h6 class="sh">ROSETE</h6>
-        <h4>Jeans rotos de pierna ancha de talle alto</h4>
-        <h3>$MXN350.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+        <p>Jeans rotos de pierna ancha de talle alto</p>
+        <p>$MXN350.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
-
-    <div class="pro">
+    <div class="product">
       <img src="img/ten5.jpeg" alt="">
-      <div class="des">
         <h6 class="sh">ROSETE</h6>
-        <h4>Rosete X Ferv Vestido ajustado ribete lanudo</h4>
-        <h3>$MXN468.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+        <p>Rosete X Ferv Vestido ajustado ribete lanudo</p>
+        <p>$MXN468.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
-
-    <div class="pro">
+    <div class="product">
       <img src="img/ten6.jpeg" alt="">
-      <div class="des">
         <h6 class="sh">ROSETE</h6>
-        <h4>Camiseta puño con abertura bajo hanky</h4>
-        <h3>$MXN570.00</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
-
-    <div class="pro">
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
       <img src="img/ten7.jpeg" alt="">
-      <div class="des">
         <h6 class="sh">ROSETE</h6>
-        <h4>Vestido tank de muslo con abertura</h4>
-        <h3>$MXN200</h3>
-        <i class='bx bx-heart bx-flashing' id="cart-icon"></i>
+        <p>Vestido tank de muslo con abertura</p>
+        <p>$MXN200</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
       </div>
     </div>
   </div>
-    <button class="ver">Ver más <i class="fas fa-arrow-right"></i></button>
-</section>
 
-<!-- Imagen de descuento -->
+  <div class="products page" id="page2">
+    <!-- Página 2 productos -->
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/ten6.jpeg" alt="">
+        <h6 class="sh">ROSETE</h6>
+        <p>Camiseta puño con abertura bajo hanky</p>
+        <p>$MXN570.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="products page" id="page3">
+    <!-- Página 3 productos -->
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img/cuetor.jpeg" alt="Producto 1"/>
+      <h6 class="sh">ROSETE</h6>
+      <p>Vestido ajustado de cuello cuadrado con abertura trasera</p>
+      <p>$MXN285.00</p>
+      <div class="actions">
+        <button class="btn">Añadir al carrito</button>
+        <button class="heart">&#10084;</button>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <button onclick="prevPage()">&#8592;</button>
+    <button onclick="nextPage()">&#8594;</button>
+  </div>
+</div>
+
+<!-- = Imagen de descuento = -->
 <section id="banner" class="section-p1">
   <h4>¡SOLO HOY!</h4>
   <h2>Hasta el <span>70% Off</span> - Adornos y Accesorios</h2>
@@ -212,9 +437,11 @@
 
 <!-- Compra por categoría -->
 <section id="categoria" class="compra-1">
+  <div class="tendencia">
   <h2>COMPRA POR CATEGORÍA</h2>
-  <div class="com-catego">
-    
+  <p>¡Encuentra tus favoritos más rápido!</p>
+  </div>
+  <div class="com-catego">    
     <div class="com">
       <img src="CPC/cat1.jpeg" alt="">
       <h3 class="rebajas">REBAJAS</h3>
@@ -318,7 +545,7 @@
 </section>
 
 <!-- Sliders -->
-<section id="collabs" class="slider-1">
+<section id="collabs">
   <h2>#ROSETEcampaigns</h2>
 <div class="slider">
   <ul>
@@ -345,161 +572,6 @@
   <div class="glopa2 pato-2"></div>
 </section>
 
-<!-- Venta flash -->
-<div class="Carousel">
-  <h2>VENTA FLASH</h2>
-  <div class="slick-list" id="slick-list">
-      <button class="slick-arrow slick-prev" id="button-prev">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-      </button>
-      <div class="slick-track" id="track">
-          <div class="slick">
-              <div>
-                  <a href="/">
-                      <h4><small>$MXN81.00 <s>$MXN226.00</s></small><span>Ahorra: $MXN145.00 <mxn>-64%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick1.jpeg" alt="Image">
-                      </picture>          
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN120.00 <s>$MXN341.00</s></small><span>Ahorra: $MXN221.00 <mxn>-65%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick2.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN273.00 <s>$MXN671.00</s></small><span>Ahorra: $MXN398.00 <mxn>-59%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick3.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN175.00 <s>$MXN462.00</s></small><span>Ahorra: $MXN287.00 <mxn>-62%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick4.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN220.00 <s>$MXN412.00</s></small><span>Ahorra: $MXN192.00 <mxn>-47%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick5.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN132.00 <s>$MXN340.00</s></small><span>Ahorra: $MXN208.00 <mxn>-61%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick6.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN128.00 <s>$MXN357.00</s></small><span>Ahorra: $MXN229.00 <mxn>-64%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick7.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN223.00 <s>$MXN506.00</s></small><span>Ahorra: $MXN283.00 <mxn>-56%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick8.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN169.00 <s>$MXN505.00</s></small><span>Ahorra: $MXN336.00 <mxn>-67%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick9.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN258.00 <s>$MXN594.00</s></small><span>Ahorra: $MXN336.00 <mxn>-57%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick10.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN93.00 <s>$MXN208.00</s></small><span>Ahorra: $MXN115.00 <mxn>-55%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick11.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN124.00 <s>$MXN286.00</s></small><span>Ahorra: $MXN162.00 <mxn>-57%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick13.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN35.00 <s>$MXN90.00</s></small><span>Ahorra: $MXN55.00 <mxn>-61%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick14.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-          <div class="slick">
-              <div>
-                  <a href="/">
-                    <h4><small>$MXN293.00 <s>$MXN638.00</s></small><span>Ahorra: $MXN345.00 <mxn>-54%</mxn></span></h4>
-                      <picture>
-                          <img src="img/slick15.jpeg" alt="Image">
-                      </picture>
-                  </a>
-              </div>
-          </div>
-      </div>
-      <button class="slick-arrow slick-next" id="button-next">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-      </button>
-  </div>
-</div>
-
 <!-- Tallas curvy -->
 <section id="curvy" class="section-2">
   <h2>TALLAS CURVY</h2>
@@ -525,15 +597,8 @@
   </div>
 </section>
 
-<!-- Tarjetas regalo -->
-<div class="regalo">
-  <h2>TARJETA DE REGALO</h2>
-  <p>¡Lo mejor de este año!</p>
-  <div class="tarjeta">
-    <img src="" alt="">
-    <img src="" alt="">
-  </div>
-</div>
+<footer>
+</footer>
 
 <!-- Script -->
     <script src="script.js"></script>
