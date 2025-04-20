@@ -236,7 +236,85 @@ mx {
     object-fit: cover;
   }
 
-/* = Color en tendencia = */
+
+/* = MODAL de CARRITO Y FAVORITOS = */
+.carrito-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 410px;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.carrito-container ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.carrito-container li {
+  margin-bottom: 10px;
+}  
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 10px 0;
+}
+
+.carrito-container .btn {
+  color: #fff;
+  background-color: #c30000;
+  padding: 10px 140px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* centrado */
+  display: block;
+  margin: 20px auto 0 auto;
+  font-size: 15px;
+}
+
+.footer-modal {
+  margin-top: 30px;
+  padding-top: 10px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* = Tooltip Atención al Cliente = */
+.soporte-hover {
+  position: relative;
+}
+
+.tooltip-soporte {
+  position: absolute;
+  left: -150px; /* hacia la izquierda */
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c30000;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* cuando pasas el mouse */
+.soporte-hover:hover .tooltip-soporte {
+  left: -130px;
+  opacity: 1;
+}
+
+
+/* = COLOR EN TENDENCIA = */
   .tendencia {
     margin-top: 50px;
     margin-bottom: 40px;

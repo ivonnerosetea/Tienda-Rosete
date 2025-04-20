@@ -29,27 +29,6 @@
   </div>
   <div class="iconos">
     <ul class="navbar"> 
-      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-      </svg></a></li>
-      
-      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <circle cx="6" cy="19" r="2" />
-        <circle cx="17" cy="19" r="2" />
-        <path d="M17 17h-11v-14h-2" />
-        <path d="M6 5l14 1l-1 7h-13" />
-      </svg></a></li>
-      
-      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <rect x="4" y="13" rx="2" width="4" height="6" />
-        <rect x="16" y="13" rx="2" width="4" height="6" />
-        <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
-        <path d="M18 19a6 3 0 0 1 -6 3" />
-      </svg></a></li>
-
       <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <circle cx="12" cy="12" r="9" />
@@ -58,6 +37,37 @@
         <path d="M11.5 3a17 17 0 0 0 0 18" />
         <path d="M12.5 3a17 17 0 0 1 0 18" />
       </svg></a></li>
+      <li>
+        <a href="#" id="icono-favoritos">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+        </a>
+      </li>      
+      <li>
+        <a href="#" id="carrito-icono">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg>
+        </a>
+      </li>
+<li class="soporte-hover">
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-headset" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <rect x="4" y="13" rx="2" width="4" height="6" />
+      <rect x="16" y="13" rx="2" width="4" height="6" />
+      <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+      <path d="M18 19a6 3 0 0 1 -6 3" />
+    </svg>
+    <span class="tooltip-soporte">¿Necesitas ayuda?</span>
+  </a>
+</li>
     </ul>
   </div>
  </section>
@@ -135,6 +145,28 @@
     </div>
   </div>
 </section>
+
+
+<!-- FAVORITOS (oculto por defecto) -->
+<div id="favoritos" class="carrito-container" style="display: none;">
+  <h3 style="margin-bottom: 20px;">MIS FAVORITOS</h3>
+  <ul id="lista-favoritos"></ul>
+  <p id="mensaje-favorito" style="display: none;">No tienes productos en favoritos</p>
+</div>
+
+<!-- = CARRITO DE COMPRAS = -->
+<div id="carrito" class="carrito-container" style="display: none;">
+  <h3 style="margin-bottom: 20px;">MI CARRITO</h3>
+  <ul id="lista-carrito"></ul>
+  <p id="mensaje-vacio" style="display: none;">Tu carrito está vacío. ¡Empieza a comprar!</p>
+  <div class="footer-modal">
+    <div class="total">
+      <p>Total:</p>
+      <span id="total">$0.00</span>
+    </div>
+    <button id="comprar-btn" class="btn">Comprar</button>
+  </div>
+</div>
 
 <!-- = COLOR EN TENDENCIA = -->
 <div class="container">
