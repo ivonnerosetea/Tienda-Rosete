@@ -253,17 +253,27 @@ mx {
 .carrito-container ul {
   list-style: none;
   padding: 0;
-  font-size: 14px;
+  font-size: 15px;
+  margin: 30px 20px 10px 20px;
 }
 
 .carrito-container li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }  
 
 .total {
   display: flex;
   justify-content: space-between;
   margin: 5px 0 10px 0;
+}
+
+.carrito-container h3 {
+  margin: 30px 0 10px 20px;
+  font-weight: bold !important;
+}
+
+.carrito-container h4 {
+  margin: 30px 0 10px 20px;
 }
 
 .carrito-container .btn {
@@ -284,6 +294,26 @@ mx {
   padding-top: 10px;
   background: #fff;
   border-top: 1px solid #ddd;
+}
+
+/*  */
+.btn-menos {
+  background: none;
+  border: none;
+}
+
+.btn-mas {
+  background: none;
+  border: none;
+}
+
+.btn-remover {
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
 }
 
 /* = Tooltip Atención al Cliente = */
@@ -672,8 +702,8 @@ button.normal {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 25px;
-    right: 25px;
+    bottom: 15px;
+    left: 15px;
     background-color: #0077b5;
     color: white;
     border-radius: 50%;

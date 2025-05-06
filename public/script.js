@@ -141,11 +141,11 @@ function renderCarrito() {
     
       li.innerHTML = `
         <div style="display: flex; align-items: center; gap: 10px;">
-          <img src="${item.imagen}" alt="${nombre}" style="width: 50px; height: auto; object-fit: cover;">
+          <img src="${item.imagen}" alt="${nombre}" style="width: 60px; height: auto; object-fit: cover;">
           <div>
             <strong>${nombre}</strong><br>
             $${item.precio.toFixed(2)} x ${item.cantidad}
-            <div>
+            <div style="margin-top: 5px;" >
               <button class="btn-menos">➖</button>
               <button class="btn-mas">➕</button>
               <button class="btn-remover">Remover</button>
